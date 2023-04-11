@@ -43,13 +43,16 @@ async function readImageAndRecognizeText(imagePath) {
 }
 
 async function main() {
+    // if you want to extract english letter from image, put your image link here
     const english = await ImageAndRecognizeText(
         "https://i.ibb.co/jTKYQqP/Captcha-United.png"
     );
 
+    // if you want to extract number from image,put your image link here
     const number = await readImageAndRecognizeText(
         "https://i.ibb.co/R4BB4DW/Captcha-Bajaj.jpg"
     );
     console.log(`English_Text: ${english}, Number: ${number}`);
 }
 main();
+// The number image pic you gave me is a little blur that's why it is not able to extract 4
